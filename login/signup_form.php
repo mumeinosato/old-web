@@ -7,7 +7,7 @@ require_once '../classes/UserLogic.php';
 if (!$result) {
     $_SESSION['login_err'] = 'ログインしてください';
     header('Location: index.php');
-    return; 
+    return;
 }
 $login_user = $_SESSION['login_user'];
 

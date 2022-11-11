@@ -1,6 +1,6 @@
 <?php
 
-require_once('dbc.php');
+require_once('../db/blog.php');
 
 class Blog extends Dbc
 {

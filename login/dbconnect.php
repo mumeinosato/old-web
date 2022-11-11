@@ -1,5 +1,5 @@
 <?php
-require_once 'env.php';
+require_once '../db/login.php';
 function connect()
 {
     $host = DB_host;
