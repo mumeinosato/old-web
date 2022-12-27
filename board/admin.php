@@ -3,6 +3,7 @@
 session_start();
 require_once '../classes/UserLogic.php';
 require_once '../login/functions.php';
+require_once '../db/login.php';
 
 $result = UserLogic::checkLogin(); 
 
@@ -14,10 +15,10 @@ if (!$result) {
 $login_user = $_SESSION['login_user'];
 
 // データベースの接続情報
-define( 'DB_HOST', 'localhost');
-define( 'DB_USER', 'board');
-define( 'DB_PASS', 'password');
-define( 'DB_NAME', 'board');
+$host = DB_HOST;
+$db = DB_NAME;
+$user = DB_USER;
+$pass = DB_PASS;
 
 // タイムゾーン設定
 date_default_timezone_set('Asia/Tokyo');

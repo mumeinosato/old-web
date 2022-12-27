@@ -1,10 +1,9 @@
 <?php
-
-// データベースの接続情報
-define( 'DB_HOST', 'localhost');
-define( 'DB_USER', 'board');
-define( 'DB_PASS', 'password');
-define( 'DB_NAME', 'board');
+require_once '../db/login.php';
+$host = DB_HOST;
+$db = DB_NAME;
+$user = DB_USER;
+$pass = DB_PASS;
 
 // 変数の初期化
 $csv_data = null;
