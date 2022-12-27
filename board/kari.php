@@ -4,10 +4,10 @@ require_once "../env.php";
 define( 'PASSWORD', 'adminPassword');
 
 // データベースの接続情報
-$host = DB_HOST;
-$db = DB_NAME;
-$user = DB_USER;
-$pass = DB_PASS;
+define( 'DB_HOST', 'localhost');
+define( 'DB_USER', 'board');
+define( 'DB_PASS', 'password');
+define( 'DB_NAME', 'board');
 
 // タイムゾーン設定
 date_default_timezone_set('Asia/Tokyo');
