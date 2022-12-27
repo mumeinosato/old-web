@@ -3,7 +3,7 @@
 session_start();
 require_once '../classes/UserLogic.php';
 require_once '../login/functions.php';
-require_once '../db/login.php';
+require_once "../env.php";
 
 $result = UserLogic::checkLogin(); 
 

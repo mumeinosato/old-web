@@ -1,5 +1,5 @@
 <?php
-require_once '../db/login.php';
+require_once "../env.php";
 // 管理ページのログインパスワード
 define( 'PASSWORD', 'adminPassword');
 
