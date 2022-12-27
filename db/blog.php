@@ -5,11 +5,10 @@ class Dbc
     protected $table_name;
     
     protected function dbConnect() {
-        $host = DB_host;
-        $db = DB_name;
-        $user = DB_user;
-        $pass = DB_pass;
-
+            $host = DB_host;
+            $db = DB_name;
+            $user = DB_user;
+            $pass = DB_pass;
         try {
 
             $option = array(
@@ -17,7 +16,7 @@ class Dbc
                 \PDO::MYSQL_ATTR_MULTI_STATEMENTS => false,
                 \PDO::ATTR_EMULATE_PREPARES => false
             );
-            $dbh = new \PDO('mysql:charset=UTF8;dbname='.DB_NAME.';host='.DB_HOST , DB_USER, DB_PASS, $option);
+            $dbh = new \PDO('mysql:charset=UTF8;dbname='.DB_name.';host='.DB_host , DB_user, DB_pass, $option);
             //echo "接続成功";
 
         } catch(\PDOException $e) {
