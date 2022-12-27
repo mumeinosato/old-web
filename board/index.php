@@ -1,5 +1,5 @@
 <?php
-require_once '../db/login.php';
+require_once '../env.php';
 // データベースの接続情報
 $host = DB_HOST;
 $db = DB_NAME;
