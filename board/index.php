@@ -1,10 +1,10 @@
 <?php
 require_once "../env.php";
 // データベースの接続情報
-$host = DB_HOST;
-$db = DB_NAME;
-$user = DB_USER;
-$pass = DB_PASS;
+define( 'DB_HOST', 'localhost:3306');
+define( 'DB_USER', 'web');
+define( 'DB_PASS', 'Me92452315@');
+define( 'DB_NAME', 'mumei_web');
 
 // タイムゾーン設定
 date_default_timezone_set('Asia/Tokyo');
