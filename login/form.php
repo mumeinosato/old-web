@@ -19,6 +19,7 @@
                     <label>Password</label>
                 </div>
                 <input type="submit" value="Login">
+                <span></span>
             </form>
         </div>
     </body>
