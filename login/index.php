@@ -25,7 +25,7 @@ session_destroy();
     <title>ログイン</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/signin.css" rel="stylesheet">
+    <link href="signin.css" rel="stylesheet">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
