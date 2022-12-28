@@ -22,7 +22,7 @@
                         <li><a href="/index.php" class="nav-link px-2 text-white">トップページ</a></li>
                         <li><a href="/blog" class="nav-link px-2 text-white">ブログ</a></li>
                         <li><a href="#" class="nav-link px-2 text-white">提供サービス</a></li>
-                        <li><a href="/board" class="nav-link px-2 text-white">掲示板</a></li>
+                        <!-- <li><a href="/board" class="nav-link px-2 text-white">掲示板</a></li> -->
                         <li><a href="#" class="nav-link px-2 text-white">お問い合わせ</a></li>
                     </ui>
                     <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
