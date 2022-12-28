@@ -3,7 +3,8 @@ body{
     padding: 0;
     font-family: montserrat;
     background-image: url(background.jpg);
-    background-size: auto;
+    background-position: center;
+    background-size: cover;
     height: 100vh;
     overflow: hidden;
 }
