@@ -38,7 +38,6 @@ $year = date('Y');
             </div>
         </header>
     </div>
-    <p class="text-muted">©︎<?php echo $year; ?> mumeinosato</p>
     <footer class="bd-footer py-5 mt-5 bg-light">
         <div class="container py-5">
             <div class="row">
@@ -50,20 +49,14 @@ $year = date('Y');
                         </svg>
                         <span class="fs-5">Bootstrap</span>
                     </a>
-                    <ul class="list-unstyled small text-muted">
-                        <li class="mb-2"><a href="https://getbootstrap.jp/docs/5.0/about/team/">Bootstrap team</a>が愛を込めて設計し <a href="https://github.com/twbs/bootstrap/graphs/contributors">コントリビュータ</a>と共に運営しています。</li>
-                        <li class="mb-2">コードライセンス <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, ドキュメント <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
-                        <li>v5.0.2.</li>
-                    </ul>
                     <ul class="list-unstyled small text-muted my-4">
-                        <li class="mb-2">日本語サイト 運営・翻訳 <a href="https://opencollective.com/line" target="_blank" rel="noopener">LINE Corp.</a></li>
                         <li>
                             <svg class="bi bi-envelope" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M14 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"></path>
                                 <path d="M.05 3.555C.017 3.698 0 3.847 0 4v.697l5.803 3.546L0 11.801V12c0 .306.069.596.192.856l6.57-4.027L8 9.586l1.239-.757 6.57 4.027c.122-.26.191-.55.191-.856v-.2l-5.803-3.557L16 4.697V4c0-.153-.017-.302-.05-.445L8 8.414.05 3.555z"></path>
                             </svg>
-                            <a href="mailto:getbootstrapjp@gmail.com">
-                                getbootstrapjp@gmail.com</a>
+                            <a href="mailto:mumeinosato@gmail.com">
+                                mumeinosato@gmail.com</a>
                         </li>
                     </ul>
                 </div>
@@ -109,6 +102,7 @@ $year = date('Y');
                 </div>
             </div>
         </div>
+        <div class="c" align="right"><p class="text-muted">©︎<?php echo $year; ?> mumeinosato</p></div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>
