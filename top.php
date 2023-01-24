@@ -1,3 +1,6 @@
+<?php
+    $year = date('Y');
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -38,6 +41,11 @@
             </div>
         </header>
     </div>
+    <footer class="footer">
+	<div class="container text-center">
+	  <p class="text-muted">©︎<?php echo $year;?> mumeinosato</p>
+	</div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>
