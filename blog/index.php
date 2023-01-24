@@ -45,7 +45,7 @@ function h($s) {
         </tr>
         <?php endforeach; ?>
     </table>
-    <?php include 'footer.php'; ?>
+    <?php include '../footer.php'; ?>
 </body>
 
 </html>
