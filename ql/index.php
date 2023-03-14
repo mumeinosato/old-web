@@ -238,7 +238,17 @@ article.reply::before {
 </head>
 <body>
 <h1>掲示板 工事中(卒業式までに作る 多分)</h1>
-<!-- ここにメッセージの入力フォームを設置 -->
+<form method="post">
+    <div>
+        <label for="view_name">表示名</label>
+        <input id="view_name" type="view_name" value="">
+    </div>
+    <div>
+        <label for="message">メッセージ</label>
+        <textarea id="message" name="message"></textarea>
+    </div>
+    <input type="submit" name="btn_submit" value="書き込む">
+</form>
 <hr>
 <section>
 <!-- ここに投稿されたメッセージを表示 -->
