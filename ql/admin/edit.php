@@ -26,7 +26,7 @@ session_start();
 if( empty($_SESSION['admin_login']) || $_SESSION['admin_login'] !== true ) {
 
 	// ログインページへリダイレクト
-	header("Location: ./admin.php");
+	header("Location: ./index.php");
 	exit;
 }
 

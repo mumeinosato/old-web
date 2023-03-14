@@ -63,7 +63,7 @@ if( !empty($_SESSION['admin_login']) && $_SESSION['admin_login'] === true ) {
 	} catch(PDOException $e) {
 
 		// 管理者ページへリダイレクト
-		header("Location: ./admin.php");
+		header("Location: ./index.php");
 		exit;
 	}
 
