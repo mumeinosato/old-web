@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <!-- <?php include '../top.php'; ?> -->
+        <?php //include '../top.php'; ?> 
         <section class="page_404">
             <div class="container">
                 <div class="row">	
@@ -25,7 +25,7 @@
                 お探しのページが見つかりませんでした
                 </h3>
                 
-                <a href="/index.php" class="link_404">トップページ</a>
+                <!-- <a href="/index.php" class="link_404">トップページ</a> -->
             </div>
                 </div>
                 </div>
