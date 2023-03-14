@@ -83,7 +83,7 @@ if( !empty($_GET['message_id']) && empty($_POST['message_id']) ) {
 
         // 文字数を確認
         if( 100 < mb_strlen($message, 'UTF-8') ) {
-			$error_message[] = 'ひと言メッセージは100文字以内で入力してください。';
+			$error_message[] = 'メッセージは100文字以内で入力してください。';
 		}
     }
 
@@ -131,11 +131,11 @@ $pdo = null;
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>ひと言掲示板 管理ページ（投稿の編集）</title>
+<title>掲示板 管理ページ（投稿の編集）</title>
 <link href="edit.css" rel="stylesheet">
 </head>
 <body>
-<h1>ひと言掲示板 管理ページ（投稿の編集）</h1>
+<h1>掲示板 管理ページ（投稿の編集）</h1>
 <?php if( !empty($error_message) ): ?>
     <ul class="error_message">
 		<?php foreach( $error_message as $value ): ?>
@@ -149,7 +149,7 @@ $pdo = null;
 		<input id="view_name" type="text" name="view_name" value="<?php if( !empty($message_data['view_name']) ){ echo $message_data['view_name']; } elseif( !empty($view_name) ){ echo htmlspecialchars( $view_name, ENT_QUOTES, 'UTF-8'); } ?>">
 	</div>
 	<div>
-		<label for="message">ひと言メッセージ</label>
+		<label for="message">メッセージ</label>
 		<textarea id="message" name="message"><?php if( !empty($message_data['message']) ){ echo $message_data['message']; } elseif( !empty($message) ){ echo htmlspecialchars( $message, ENT_QUOTES, 'UTF-8'); } ?></textarea>
 	</div>
 	<a class="btn_cancel" href="admin.php">キャンセル</a>

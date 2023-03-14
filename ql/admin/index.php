@@ -69,11 +69,11 @@ $pdo = null;
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>ひと言掲示板 管理ページ</title>
+<title>掲示板 管理ページ</title>
 <link href="admin.css" rel="stylesheet">
 </head>
 <body>
-<h1>ひと言掲示板 管理ページ</h1>
+<h1>掲示板 管理ページ</h1>
 <?php if( !empty($error_message) ): ?>
     <ul class="error_message">
 		<?php foreach( $error_message as $value ): ?>

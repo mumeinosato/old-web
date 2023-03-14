@@ -53,12 +53,12 @@ if( !empty($_POST['btn_submit']) ) {
 
 	// メッセージの入力チェック
 	if( empty($message) ) {
-		$error_message[] = 'ひと言メッセージを入力してください。';
+		$error_message[] = 'メッセージを入力してください。';
 	} else {
 
         // 文字数を確認
         if( 100 < mb_strlen($message, 'UTF-8') ) {
-			$error_message[] = 'ひと言メッセージは100文字以内で入力してください。';
+			$error_message[] = 'メッセージは100文字以内で入力してください。';
 		}
     }
 
@@ -121,11 +121,11 @@ $pdo = null;
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>ひと言掲示板</title>
+<title>掲示板</title>
 <link href="index.css" rel="stylesheet">
 </head>
 <body>
-<h1>ひと言掲示板</h1>
+<h1>掲示板</h1>
 <?php if( empty($_POST['btn_submit']) && !empty($_SESSION['success_message']) ): ?>
     <p class="success_message"><?php echo htmlspecialchars( $_SESSION['success_message'], ENT_QUOTES, 'UTF-8'); ?></p>
     <?php unset($_SESSION['success_message']); ?>
@@ -143,7 +143,7 @@ $pdo = null;
 		<input id="view_name" type="text" name="view_name" value="<?php if( !empty($_SESSION['view_name']) ){ echo htmlspecialchars( $_SESSION['view_name'], ENT_QUOTES, 'UTF-8'); } ?>">
 	</div>
 	<div>
-		<label for="message">ひと言メッセージ</label>
+		<label for="message">メッセージ</label>
 		<textarea id="message" name="message"><?php if( !empty($message) ){ echo htmlspecialchars( $message, ENT_QUOTES, 'UTF-8'); } ?></textarea>
 	</div>
 	<input type="submit" name="btn_submit" value="書き込む">
