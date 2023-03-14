@@ -1,10 +1,11 @@
 <?php
 
 // データベースの接続情報
-define( 'DB_HOST', 'localhost');
-define( 'DB_USER', 'root');
-define( 'DB_PASS', 'password');
-define( 'DB_NAME', 'board');
+define( 'DB_HOST', 'localhost:3306');
+define( 'DB_USER', 'web');
+define( 'DB_PASS', 'Me92452315@');
+define( 'DB_NAME', 'mumei_web');
+
 
 // 変数の初期化
 $csv_data = null;
@@ -42,13 +43,13 @@ if( !empty($_SESSION['admin_login']) && $_SESSION['admin_login'] === true ) {
 		if( !empty($limit) ) {
 
 			// SQL作成
-			$stmt = $pdo->prepare("SELECT * FROM message ORDER BY post_date ASC LIMIT :limit");
+			$stmt = $pdo->prepare("SELECT * FROM chomessage ORDER BY post_date ASC LIMIT :limit");
 
 			// 値をセット
 			$stmt->bindValue( ':limit', $_GET['limit'], PDO::PARAM_INT);
 
 		} else {
-			$stmt = $pdo->prepare("SELECT * FROM message ORDER BY post_date ASC");
+			$stmt = $pdo->prepare("SELECT * FROM chomessage ORDER BY post_date ASC");
 		}
 
 		// SQLクエリの実行

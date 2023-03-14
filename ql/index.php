@@ -122,7 +122,7 @@ $pdo = null;
 <head>
 <meta charset="utf-8">
 <title>ひと言掲示板</title>
-<link href="style.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
 </head>
 <body>
 <h1>ひと言掲示板</h1>
