@@ -237,7 +237,7 @@ article.reply::before {
 </style>
 </head>
 <body>
-<h1>ひと言掲示板</h1>
+<h1>掲示板 工事中(卒業式までに作る 多分)</h1>
 <!-- ここにメッセージの入力フォームを設置 -->
 <hr>
 <section>
