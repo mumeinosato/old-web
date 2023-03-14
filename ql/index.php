@@ -1,10 +1,10 @@
 <?php
 
 // データベースの接続情報
-define( 'DB_HOST', 'localhost');
-define( 'DB_USER', 'root');
-define( 'DB_PASS', 'password');
-define( 'DB_NAME', 'board');
+define( 'DB_HOST', 'localhost:3306');
+define( 'DB_USER', 'web');
+define( 'DB_PASS', 'Me92452315@');
+define( 'DB_NAME', 'mumei_web');
 
 // タイムゾーン設定
 date_default_timezone_set('Asia/Tokyo');
@@ -73,7 +73,7 @@ if( !empty($_POST['btn_submit']) ) {
         try {
 
             // SQL作成
-            $stmt = $pdo->prepare("INSERT INTO message (view_name, message, post_date) VALUES ( :view_name, :message, :current_date)");
+            $stmt = $pdo->prepare("INSERT INTO chomessage (view_name, message, post_date) VALUES ( :view_name, :message, :current_date)");
 
             // 値をセット
             $stmt->bindParam( ':view_name', $view_name, PDO::PARAM_STR);
@@ -109,7 +109,7 @@ if( !empty($_POST['btn_submit']) ) {
 if( !empty($pdo) ) {
 
     // メッセージのデータを取得する
-    $sql = "SELECT view_name,message,post_date FROM message ORDER BY post_date DESC";
+    $sql = "SELECT view_name,message,post_date FROM chomessage ORDER BY post_date DESC";
     $message_array = $pdo->query($sql);
 }
 
