@@ -111,13 +111,13 @@ if( !empty($pdo) ) {
     // メッセージのデータを取得する
     $sql = "SELECT view_name,message,post_date FROM chomessage ORDER BY post_date DESC";
     $message_array = $pdo->query($sql);
-    //foreach( $pdo->query($sql) as $row) {
-    //    $message[] = array(
-    //        'view_name' => $row['view_name'],
-    //        'message' => $row['message'],
-    //        'post_date' => $row['post_date']
-    //    );
-    //}
+    foreach( $pdo->query($sql) as $row) {
+        $message[] = array(
+            'view_name' => $row['view_name'],
+            'message' => $row['message'],
+            'post_date' => $row['post_date']
+        );
+    }
     if(preg_match('/https?:\/\/[-_.!~*\'()a-zA-Z0-9;\/?:@&=+$,%#]+(png|jpeg|jpg|gif)/', $row['message'], $matches)) {
         $message[count($message)-1]['image'] = $matches[0];
     }
