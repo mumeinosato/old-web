@@ -61,7 +61,7 @@ if( !empty($_GET['message_id']) && empty($_POST['message_id']) ) {
 
 	// 投稿データが取得できないときは管理ページに戻る
 	if( empty($message_data) ) {
-		header("Location: ./admin.php");
+		header("Location: ./index.php");
 		exit;
 	}
 
