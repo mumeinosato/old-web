@@ -87,20 +87,6 @@ hr {
     opacity: .25
 }
 
-abbr[title] {
-    -webkit-text-decoration: underline dotted;
-    text-decoration: underline dotted;
-    cursor: help;
-    -webkit-text-decoration-skip-ink: none;
-    text-decoration-skip-ink: none
-}
-
-address {
-    margin-bottom: 1rem;
-    font-style: normal;
-    line-height: inherit
-}
-
 ol,
 ul {
     padding-left: 2rem
@@ -127,10 +113,6 @@ dt {
 dd {
     margin-bottom: .5rem;
     margin-left: 0
-}
-
-blockquote {
-    margin: 0 0 1rem
 }
 
 b,
@@ -180,56 +162,10 @@ a:not([href]):not([class]):hover {
     text-decoration: none
 }
 
-code,
-kbd,
-pre,
-samp {
-    font-family: var(--bs-font-monospace);
-    font-size: 1em
-}
-
-pre {
-    display: block;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    overflow: auto;
-    font-size: .875em
-}
-
-pre code {
-    font-size: inherit;
-    color: inherit;
-    word-break: normal
-}
-
-code {
-    font-size: .875em;
-    color: var(--bs-code-color);
-    word-wrap: break-word
-}
-
-a>code {
-    color: inherit
-}
-
-kbd {
-    padding: .1875rem .375rem;
-    font-size: .875em;
-    color: var(--bs-body-bg);
-    background-color: var(--bs-body-color);
-    border-radius: .25rem
-}
-
-kbd kbd {
-    padding: 0;
-    font-size: 1em
-}
-
 figure {
     margin: 0 0 1rem
 }
 
-img,
 svg {
     vertical-align: middle
 }
