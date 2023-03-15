@@ -79,57 +79,6 @@
     }
 }
 
-hr {
-    margin: 1rem 0;
-    color: inherit;
-    border: 0;
-    border-top: 1px solid;
-    opacity: .25
-}
-
-a {
-    color: var(--bs-link-color);
-    text-decoration: underline
-}
-
-a:hover {
-    color: var(--bs-link-hover-color)
-}
-
-a:not([href]):not([class]),
-a:not([href]):not([class]):hover {
-    color: inherit;
-    text-decoration: none
-}
-
-svg {
-    vertical-align: middle
-}
-
-button {
-    border-radius: 0
-}
-
-button:focus:not(:focus-visible) {
-    outline: 0
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit
-}
-
-button,
-select {
-    text-transform: none
-}
-
 [role=button] {
     cursor: pointer
 }
