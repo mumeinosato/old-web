@@ -67,3 +67,21 @@
 .me-2{margin-right:.5rem!important}
 
 .fs-5{font-size:1.25rem!important}
+
+.list-unstyled{padding-left:0;list-style:none}
+
+.small,small{font-size:.875em}
+
+.text-muted{--bs-text-opacity:1;color:#6c757d!important}.text-black-50{--bs-text-opacity:1;color:rgba(0,0,0,.5)!important}
+
+.my-4{margin-top:1.5rem!important;margin-bottom:1.5rem!important}
+
+.col-6{flex:0 0 auto;width:50%}
+
+.col-lg-2{flex:0 0 auto;width:16.66666667%}
+
+.offset-lg-1{margin-left:8.33333333%}
+
+.text-center{text-align:center!important}
+
+.text-muted{--bs-text-opacity:1;color:#6c757d!important}
