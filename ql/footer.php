@@ -38,9 +38,9 @@ $year = date('Y');
                         <h5>この掲示板について</h5>
                         <ul class="list-unstyled">
                             <br>
-                            <li class="mb-2"><a href="https://getbootstrap.jp/">利用規約</a></li>
+                            <li class="mb-2"><a href="use.php">利用規約</a></li>
                             <br>
-                            <li class="mb-2"><a href="https://getbootstrap.jp/docs/5.0/">更新履歴</a></li>
+                            <li class="mb-2"><a href="version.php">更新履歴</a></li>
                         </ul>
                     </div>
                 </div>
