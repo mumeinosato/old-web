@@ -45,36 +45,6 @@ $year = date('Y');
                             <li class="mb-2"><a href="https://blog.getbootstrap.com/">Blog</a></li>
                         </ul>
                     </div>
-                    <div class="col-6 col-lg-2 mb-3">
-                        <h5>Guides</h5>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><a href="https://getbootstrap.jp/docs/5.0/getting-started/">Getting started</a></li>
-                            <li class="mb-2"><a href="https://getbootstrap.jp/docs/5.0/examples/starter-template/">Starter template</a></li>
-                            <li class="mb-2"><a href="https://getbootstrap.jp/docs/5.0/getting-started/webpack/">Webpack</a></li>
-                            <li class="mb-2"><a href="https://getbootstrap.jp/docs/5.0/getting-started/parcel/">Parcel</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-lg-2 mb-3">
-                        <h5>Projects</h5>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Bootstrap 5</a></li>
-                            <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
-                            <li class="mb-2"><a href="https://github.com/twbs/icons">Icons</a></li>
-                            <li class="mb-2"><a href="https://github.com/twbs/rfs">RFS</a></li>
-                            <li class="mb-2"><a href="https://github.com/twbs/bootstrap-npm-starter">npm starter</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-lg-2 mb-3">
-                        <h5>Community</h5>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
-                            <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions">Discussions</a></li>
-                            <li class="mb-2"><a href="https://github.com/sponsors/twbs">Corporate sponsors</a></li>
-                            <li class="mb-2"><a href="https://opencollective.com/bootstrap">Open Collective</a></li>
-                            <li class="mb-2"><a href="https://bootstrap-slack.herokuapp.com/">Slack</a></li>
-                            <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack Overflow</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
             <div class="text-center">
