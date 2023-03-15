@@ -169,10 +169,10 @@ $pdo = null;
 			<time><?php echo date('Y年m月d日 H:i', strtotime($value['post_date'])); ?></time>
 			<?php
 			// もし画像のリンクがある場合は、imgタグを作成して表示する
-			if (isset($value['image'])) {
-				echo '<img src="'.$value['image'].'" alt="image">';
-			} else {
-                var_dump($value);
+            if (array_key_exists('image', $value)) {
+                echo '<img src="'.$value['image'].'" alt="image">';
+            } else {
+                echo "No image found";
             }
 			?>
 		</div>
