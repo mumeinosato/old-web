@@ -91,7 +91,7 @@ if( !empty($_SESSION['admin_login']) && $_SESSION['admin_login'] === true ) {
 } else {
 
 	// ログインページへリダイレクト
-	header("Location: ./admin.php");
+	header("Location: ./index.php");
 	exit;
 }
 

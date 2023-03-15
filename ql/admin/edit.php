@@ -61,7 +61,7 @@ if( !empty($_GET['message_id']) && empty($_POST['message_id']) ) {
 
 	// 投稿データが取得できないときは管理ページに戻る
 	if( empty($message_data) ) {
-		header("Location: ./admin.php");
+		header("Location: ./index.php");
 		exit;
 	}
 
@@ -116,7 +116,7 @@ if( !empty($_GET['message_id']) && empty($_POST['message_id']) ) {
 
 		// 更新に成功したら一覧に戻る
 		if( $res ) {
-			header("Location: ./admin.php");
+			header("Location: ./index.php");
 			exit;
 		}
 	}
@@ -152,7 +152,7 @@ $pdo = null;
 		<label for="message">メッセージ</label>
 		<textarea id="message" name="message"><?php if( !empty($message_data['message']) ){ echo $message_data['message']; } elseif( !empty($message) ){ echo htmlspecialchars( $message, ENT_QUOTES, 'UTF-8'); } ?></textarea>
 	</div>
-	<a class="btn_cancel" href="admin.php">キャンセル</a>
+	<a class="btn_cancel" href="index.php">キャンセル</a>
 	<input type="submit" name="btn_submit" value="更新">
 	<input type="hidden" name="message_id" value="<?php if( !empty($message_data['id']) ){ echo $message_data['id']; } elseif( !empty($_POST['message_id']) ){ echo htmlspecialchars( $_POST['message_id'], ENT_QUOTES, 'UTF-8'); } ?>">
 </form>
