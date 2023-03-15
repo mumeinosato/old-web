@@ -7,7 +7,8 @@ $year = date('Y');
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+    <link href="footer.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,8 +30,8 @@ $year = date('Y');
                                     <path fill-rule="evenodd" d="M14 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"></path>
                                     <path d="M.05 3.555C.017 3.698 0 3.847 0 4v.697l5.803 3.546L0 11.801V12c0 .306.069.596.192.856l6.57-4.027L8 9.586l1.239-.757 6.57 4.027c.122-.26.191-.55.191-.856v-.2l-5.803-3.557L16 4.697V4c0-.153-.017-.302-.05-.445L8 8.414.05 3.555z"></path>
                                 </svg>
-                                <a href="mailto:mumeinosato@gmail.com">
-                                    mumeinosato@gmail.com</a>
+                                <a href="mailto:">
+                                    そんなのも教えないよ</a>
                             </li>
                         </ul>
                     </div>
@@ -77,7 +78,7 @@ $year = date('Y');
                 </div>
             </div>
             <div class="text-center">
-                <p class="text-muted">©︎<?php echo $year; ?> mumeinosato</p>
+                <p class="text-muted">©︎<?php echo $year; ?> T.Y</p>
             </div>
         </footer>
     </div>
