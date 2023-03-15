@@ -224,3 +224,7 @@ article.reply::before {
         height: 70px;
     }
 }
+
+hr {
+  background-color: green;
+}
