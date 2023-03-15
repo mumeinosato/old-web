@@ -1,4 +1,5 @@
 <?php
+ob_start();
 
 // データベースの接続情報
 define( 'DB_HOST', 'localhost:3306');
@@ -169,11 +170,9 @@ $pdo = null;
 			<time><?php echo date('Y年m月d日 H:i', strtotime($value['post_date'])); ?></time>
 			<?php
 			// もし画像のリンクがある場合は、imgタグを作成して表示する
-            if (array_key_exists('image', $value)) {
-                echo '<img src="'.$value['image'].'" alt="image">';
-            } else {
-                echo "No image found";
-            }
+			if (isset($value['image'])) {
+				echo '<img src="'.$value['image'].'" alt="image">';
+			} 
 			?>
 		</div>
 		<p><?php echo nl2br(htmlspecialchars( $value['message'], ENT_QUOTES, 'UTF-8')); ?></p>
