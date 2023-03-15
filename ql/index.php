@@ -162,19 +162,13 @@ $pdo = null;
 <section>
 <?php if( !empty($message_array) ){ ?>
 <?php foreach( $message_array as $value ){ ?>
-	<article>
-		<div class="info">
-			<h2><?php echo htmlspecialchars( $value['view_name'], ENT_QUOTES, 'UTF-8'); ?></h2>
-			<time><?php echo date('Y年m月d日 H:i', strtotime($value['post_date'])); ?></time>
-			<?php
-			// もし画像のリンクがある場合は、imgタグを作成して表示する
-			if (isset($value['image'])) {
-				echo '<img src="'.$value['image'].'" alt="image">';
-			}
-			?>
-		</div>
-		<p><?php echo nl2br(htmlspecialchars( $value['message'], ENT_QUOTES, 'UTF-8')); ?></p>
-	</article>
+<article>
+    <div class="info">
+        <h2><?php echo htmlspecialchars( $value['view_name'], ENT_QUOTES, 'UTF-8'); ?></h2>
+        <time><?php echo date('Y年m月d日 H:i', strtotime($value['post_date'])); ?></time>
+    </div>
+    <p><?php echo nl2br( htmlspecialchars( $value['message'], ENT_QUOTES, 'UTF-8') ); ?></p>
+</article>
 <?php } ?>
 <?php } ?>
 </section>
