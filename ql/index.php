@@ -184,5 +184,6 @@ $pdo = null;
 <?php } ?>
 <?php } ?>
 </section>
+<?php include 'footer.php' ?>
 </body>
 </html>
