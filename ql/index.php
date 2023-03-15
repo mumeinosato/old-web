@@ -110,7 +110,17 @@ if( !empty($pdo) ) {
 
     // メッセージのデータを取得する
     $sql = "SELECT view_name,message,post_date FROM chomessage ORDER BY post_date DESC";
-    $message_array = $pdo->query($sql);
+    //$message_array = $pdo->query($sql);
+    foreach( $pdo->query($sql) as $row) {
+        $message[] = array(
+            'view_name' => $row['view_name'],
+            'message' => $row['message'],
+            'post_date' => $row['post_date']
+        );
+    }
+    if(preg_match('/https?:\/\/[-_.!~*\'()a-zA-Z0-9;\/?:@&=+$,%#]+(png|jpeg|jpg|gif)/', $row['message'], $matches)) {
+        $message[count($message)-1]['image'] = $matches[0];
+    }
 }
 
 // データベースの接続を閉じる
@@ -152,13 +162,19 @@ $pdo = null;
 <section>
 <?php if( !empty($message_array) ){ ?>
 <?php foreach( $message_array as $value ){ ?>
-<article>
-    <div class="info">
-        <h2><?php echo htmlspecialchars( $value['view_name'], ENT_QUOTES, 'UTF-8'); ?></h2>
-        <time><?php echo date('Y年m月d日 H:i', strtotime($value['post_date'])); ?></time>
-    </div>
-    <p><?php echo nl2br( htmlspecialchars( $value['message'], ENT_QUOTES, 'UTF-8') ); ?></p>
-</article>
+	<article>
+		<div class="info">
+			<h2><?php echo htmlspecialchars( $value['view_name'], ENT_QUOTES, 'UTF-8'); ?></h2>
+			<time><?php echo date('Y年m月d日 H:i', strtotime($value['post_date'])); ?></time>
+			<?php
+			// もし画像のリンクがある場合は、imgタグを作成して表示する
+			if (isset($value['image'])) {
+				echo '<img src="'.$value['image'].'" alt="image">';
+			}
+			?>
+		</div>
+		<p><?php echo nl2br(htmlspecialchars( $value['message'], ENT_QUOTES, 'UTF-8')); ?></p>
+	</article>
 <?php } ?>
 <?php } ?>
 </section>
