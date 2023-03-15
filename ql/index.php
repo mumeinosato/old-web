@@ -124,9 +124,8 @@ if( !empty($pdo) ) {
             $image_url = $matches[0];
         
             // 画像のタグを生成する
-            $row['message'] = preg_replace('/' . preg_quote($image_url, '/') . '/', '<img src="' . $image_url . '">', $row['message']);
-        }
-        
+            $row['message'] = preg_replace('/' . preg_quote($image_url, '/') . '/', '<img src="' . $image_url . '" alt="画像">', $row['message']);
+        }             
     }    
 }
 
