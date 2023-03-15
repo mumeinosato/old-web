@@ -171,6 +171,7 @@ $pdo = null;
 			// もし画像のリンクがある場合は、imgタグを作成して表示する
 			if (isset($value['image'])) {
 				echo '<img src="'.$value['image'].'" alt="image">';
+                echo("a");
 			}
 			?>
 		</div>
