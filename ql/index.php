@@ -117,10 +117,11 @@ if( !empty($pdo) ) {
             'message' => $row['message'],
             'post_date' => $row['post_date']
         );
-    }
-    if(preg_match('/https?:\/\/[-_.!~*\'()a-zA-Z0-9;\/?:@&=+$,%#]+(png|jpeg|jpg|gif)/', $row['message'], $matches)) {
-        $message[count($message)-1]['image'] = $matches[0];
-    }
+    
+        if(preg_match('/https?:\/\/[-_.!~*\'()a-zA-Z0-9;\/?:@&=+$,%#]+(png|jpeg|jpg|gif)/', $row['message'], $matches)) {
+            $message[count($message)-1]['image'] = $matches[0];
+        }
+    }    
 }
 
 // データベースの接続を閉じる
