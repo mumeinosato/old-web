@@ -137,7 +137,7 @@ $pdo = null;
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>掲示板</title>
+<title>掲示板(笑)</title>
 <link href="index.css" rel="stylesheet">
 </head>
 <body>
