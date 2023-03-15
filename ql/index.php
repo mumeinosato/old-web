@@ -120,7 +120,25 @@ if( !empty($pdo) ) {
         );
     
         if(preg_match('/https?:\/\/[-_.!~*\'()a-zA-Z0-9;\/?:@&=+$,%#]+(png|jpeg|jpg|gif)/', $row['message'], $matches)) {
-            $message[count($message)-1]['image'] = '<img src="' . $matches[0] . '">';
+            // 画像URLを取得する
+            $image_url = $matches[0];
+        
+            // 画像を取得するためのリクエストを作成する
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $image_url);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_HEADER, false);
+            curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+            $image_data = curl_exec($ch);
+            $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+            curl_close($ch);
+        
+            // 画像を正常に取得できた場合、<img>タグを生成する
+            if ($http_code == 200) {
+                $image_type = pathinfo($image_url, PATHINFO_EXTENSION);
+                $image_src = 'data:image/' . $image_type . ';base64,' . base64_encode($image_data);
+                $message[count($message)-1]['image'] = '<img src="' . $image_src . '">';
+            }
         }
     }    
 }
