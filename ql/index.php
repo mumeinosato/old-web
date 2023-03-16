@@ -164,7 +164,7 @@ $pdo = null;
 	</div>
 	<input type="submit" name="btn_submit" value="書き込む">
 </form>
-<hr>
+<br>
 <section>
 <?php if( !empty($message_array) ){ ?>
 <?php foreach( $message_array as $value ){ ?>
