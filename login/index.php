@@ -35,7 +35,7 @@ session_destroy();
             <h1>Login</h1>
             <form action="login.php" method="post">
                 <div class="txt_field">
-                    <input id="floatingInput" type="email" required>
+                    <input id="floatingInput" type="email" name="email" placeholder="name@exampl.com">
                     <span></span>
                     <label for="email">メールアドレス</label>
                     <?php if (isset($err['email'])) : ?>
@@ -43,7 +43,7 @@ session_destroy();
                     <?php endif; ?>    
                 </div>
                 <div class="txt_field">
-                    <input type="password" id="floatingPassword" required>
+                <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
                     <span></span>
                     <label for="password">パスワード:</label>
                     <?php if (isset($err['password'])) : ?>
