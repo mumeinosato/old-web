@@ -29,10 +29,11 @@ session_destroy();
     <body>
         <?php if(isset($err['msg'])) : ?>
             <p><?php echo $err['msg']; ?></p>
-        <?php endif; ?>    
+        <?php endif; ?>  
+        <main class="form-signin">  
         <div class="center">
             <h1>Login</h1>
-            <form method="post">
+            <form action="login.php" method="post">
                 <div class="txt_field">
                     <input id="floatingInput" type="email" required>
                     <span></span>
