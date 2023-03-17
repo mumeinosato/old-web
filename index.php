@@ -9,7 +9,7 @@ $content2 = "テストテキスト";
 if( is_writable($path) ) {
 
 	// ファイルを書き込みモードで開く
-	$file_handle = fopen("data.txt", "w");
+	$file_handle = fopen("httpdocs/data.txt", "w");
 
 	// ファイルへデータを書き込み
 	fwrite( $file_handle, $content);
