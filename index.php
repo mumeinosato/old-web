@@ -1,4 +1,5 @@
 <?php
+require_once 'test.php';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
