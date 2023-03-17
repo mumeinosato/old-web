@@ -35,43 +35,27 @@ $year = date('Y');
                         </ul>
                     </div>
                     <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-                        <h5>Links</h5>
+                        <h5>リンク</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="https://getbootstrap.jp/">Home</a></li>
-                            <li class="mb-2"><a href="https://getbootstrap.jp/docs/5.0/">Docs</a></li>
-                            <li class="mb-2"><a href="https://getbootstrap.jp/docs/5.0/examples/">Examples</a></li>
-                            <li class="mb-2"><a href="https://opencollective.com/bootstrap">Themes</a></li>
-                            <li class="mb-2"><a href="https://blog.getbootstrap.com/">Blog</a></li>
+                            <li class="mb-2"><a href="https://mumeinosato.jpn.gg/">サイト</a></li>
+                            <li class="mb-2"><a href="https://twitter.com/mumeinosato">Twitter</a></li>
+                            <li class="mb-2"><a href="https://www.youtube.com/channel/UCpb92184AP2Ffhyf7u2bD3w">YouTube</a></li>
+                            <li class="mb-2"><a href="https://github.com/mumeinosato">GitHub</a></li>
+                            <li class="mb-2"><a href="https://discord.gg/8WTbZXg">Discord</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-lg-2 mb-3">
-                        <h5>Guides</h5>
+                        <h5>サービス</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="https://getbootstrap.jp/docs/5.0/getting-started/">Getting started</a></li>
-                            <li class="mb-2"><a href="https://getbootstrap.jp/docs/5.0/examples/starter-template/">Starter template</a></li>
-                            <li class="mb-2"><a href="https://getbootstrap.jp/docs/5.0/getting-started/webpack/">Webpack</a></li>
-                            <li class="mb-2"><a href="https://getbootstrap.jp/docs/5.0/getting-started/parcel/">Parcel</a></li>
+                            <li class="mb-2"><a href="https://getbootstrap.jp/docs/5.0/getting-started/">Minecraft Server</a></li>
+                            <li class="mb-2"><a href="https://getbootstrap.jp/docs/5.0/examples/starter-template/">Discord Bot</a></li>
+                            <li class="mb-2"><a href="https://getbootstrap.jp/docs/5.0/getting-started/webpack/">利用規約</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-lg-2 mb-3">
-                        <h5>Projects</h5>
+                        <h5>その他</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Bootstrap 5</a></li>
-                            <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
-                            <li class="mb-2"><a href="https://github.com/twbs/icons">Icons</a></li>
-                            <li class="mb-2"><a href="https://github.com/twbs/rfs">RFS</a></li>
-                            <li class="mb-2"><a href="https://github.com/twbs/bootstrap-npm-starter">npm starter</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-lg-2 mb-3">
-                        <h5>Community</h5>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
-                            <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions">Discussions</a></li>
-                            <li class="mb-2"><a href="https://github.com/sponsors/twbs">Corporate sponsors</a></li>
-                            <li class="mb-2"><a href="https://opencollective.com/bootstrap">Open Collective</a></li>
-                            <li class="mb-2"><a href="https://bootstrap-slack.herokuapp.com/">Slack</a></li>
-                            <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack Overflow</a></li>
+                            <li class="mb-2"><a href="https://github.com/twbs/bootstrap">お問い合わせ</a></li>
                         </ul>
                     </div>
                 </div>
