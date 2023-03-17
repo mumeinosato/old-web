@@ -22,6 +22,7 @@ session_destroy();
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css"> 
+        <link rel="icon" href="/image/icon.ico">
     </head>
     <body>
         <?php if(isset($err['msg'])) : ?>

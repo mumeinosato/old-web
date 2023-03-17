@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-
+        <link rel="icon" href="/image/icon.ico">
     </head>
     <body>
         <p id=device></p>

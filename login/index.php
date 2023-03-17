@@ -42,6 +42,7 @@ session_destroy();
         }
       }
     </style>
+    <link rel="icon" href="/image/icon.ico">
 </head>
 <body class="text-center">      
     <?php if (isset($err['msg'])) : ?>

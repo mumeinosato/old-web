@@ -26,6 +26,7 @@ $login_user = $_SESSION['login_user'];
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
     <link href="../css/dashboard.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
+    <link rel="icon" href="/image/icon.ico">
 </head>
 <body>
 <?php include 'side.php'; ?>

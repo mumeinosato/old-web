@@ -21,6 +21,7 @@ unset($_SESSION['login_err']);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ユーザー登録</title>
+    <link rel="icon" href="/image/icon.ico">
 </head>
 <body>
 <h2>ユーザー登録</h2>

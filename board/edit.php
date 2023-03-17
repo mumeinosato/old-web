@@ -130,6 +130,7 @@ $pdo = null;
 <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/features/">
 <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
 <link href="../css/dashboard.css" rel="stylesheet"> 
+<link rel="icon" href="/image/icon.ico">
 </head>
 <body>
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
