@@ -1,7 +1,5 @@
 <?php
 
-use Michelf\Markdown;
-
 require_once '../env.php';
 require_once 'parsedown/Parsedown.php';
 
