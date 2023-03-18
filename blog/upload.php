@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_SERVER['HTTP_X_GITHUB_EVENT'
         $files = $commit['modified'];
         foreach ($files as $file) {
             if (preg_match('/\.md$/', $file)) {
-                $url = "https://raw.githubusercontent.com/{$owner_name}/{$repository_name}/{$ref}/{$file}";
+                $url = "https://raw.githubusercontent.com/mumeinosato/blog/master/{$file}";
                 $contents = file_get_contents($url);
 
                 $html = markdown_to_html($contents);
