@@ -31,19 +31,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_SERVER['HTTP_X_GITHUB_EVENT'
     }
 
     foreach ($commits as $commit) {
+        $title = $commit['message'];
         $files = $commit['modified'];
         foreach ($files as $file) {
             if (preg_match('/\.md$/', $file)) {
                 $url = "https://raw.githubusercontent.com/mumeinosato/blog/master/{$file}";
                 $contents = file_get_contents($url);
-
+    
                 $html = markdown_to_html($contents);
-
+    
                 $filename = basename($file, ".md") . ".php";
                 $path = "data/{$filename}";
                 file_put_contents($path, $html);
-
-                $sql = "INSERT INTO blog (title, file_path) VALUES ('{$filename}', '{$path}')";
+    
+                $sql = "INSERT INTO blog (title, file_path) VALUES ('{$title}', '{$path}')";
                 if ($conn->query($sql) === TRUE) {
                     echo "New record created successfully";
                 } else {
