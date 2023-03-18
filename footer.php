@@ -55,7 +55,7 @@ $year = date('Y');
                     <div class="col-6 col-lg-2 mb-3">
                         <h5>その他</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="https://github.com/twbs/bootstrap">お問い合わせ</a></li>
+                            <li class="mb-2"><a href="../inquiry">お問い合わせ</a></li>
                         </ul>
                     </div>
                 </div>
