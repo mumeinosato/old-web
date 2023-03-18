@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_SERVER['HTTP_X_GITHUB_EVENT'
     }
 
     foreach ($commits as $commit) {
-        $files = $commit['modfied'];
+        $files = $commit['modified'];
         foreach ($files as $file) {
             if (preg_match('/\.md$/', $file)) {
                 $url = "https://raw.githubusercontent.com/{$owner_name}/{$repository_name}/{$ref}/{$file}";
