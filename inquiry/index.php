@@ -236,6 +236,7 @@ function validation($data) {
 <link href="style.css" rel="stylesheet">
 </head>
 <body>
+<?php include '../top.php'; ?>
 <h1>お問い合わせフォーム</h1>
 <?php if( $page_flag === 1 ): ?>
 
