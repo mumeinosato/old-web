@@ -5,3 +5,22 @@
 p.sp {
     font-size: large;
 }
+
+.col-md-9{
+    flex:0 0 auto;
+    width:75%
+}
+
+.ms-sm-auto{
+    margin-left:auto!important
+}
+
+.col-lg-10{
+    flex:0 0 auto;
+    width:83.33333333%
+}
+
+.px-md-4{
+    padding-right:1.5rem!important;
+    padding-left:1.5rem!important
+}
