@@ -38,7 +38,7 @@ function h($s) {
 </head>
 <body>
 <?php include '../admin/side.php'; ?>
-    <div>
+    <div class="top">
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
             <p class="sp2"></p>
             <h2>ブログ一覧</h2>
