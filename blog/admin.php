@@ -37,7 +37,7 @@ function h($s) {
     <link rel="icon" href="/image/icon.ico">  
 </head>
 <body>
-<?php include '../admin/index.php'; ?>
+<?php include '../admin/side.php'; ?>
     <div>
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
             <p class="sp2"></p>
