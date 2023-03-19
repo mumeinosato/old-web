@@ -11,6 +11,21 @@
     <link href="style.css" rel="stylesheet">
     <!-- <link href="style.css" rel="stylesheet"> -->
     <link rel="icon" href="/image/icon.ico">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
 </head>
 <body>   
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
