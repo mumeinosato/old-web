@@ -111,13 +111,13 @@ $login_user = $_SESSION['login_user'];
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
-                <a href="../admin" class="nav-link active" aria-current="page">
+                <a href="#" class="nav-link text-white">
                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
                 ホーム
                 </a>
             </li>
             <li>
-                <a href="../admin/analytics.php" class="nav-link text-white">
+                <a href="#" class="nav-link active" aria-current="page">
                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
                 アナリティクス
                 </a>
@@ -129,7 +129,7 @@ $login_user = $_SESSION['login_user'];
                 </a>
             </li>
             <li>
-                <a href="../board/admin.php" class="nav-link text-white">
+                <a href="#" class="nav-link text-white">
                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
                 掲示板
                 </a>
@@ -144,13 +144,15 @@ $login_user = $_SESSION['login_user'];
             <hr>
             <div class="dropdown">
             <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="https://avatars.githubusercontent.com/u/66110797?s=48&v=4" alt="" width="32" height="32" class="rounded-circle me-2">
-                <strong>admin</strong>
+                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong>mdo</strong>
             </a>
             <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                <li><a class="dropdown-item" href="#">設定</a></li>
+                <li><a class="dropdown-item" href="#">New project...</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../login/logout.php">ログアウト</a></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
             </ul>
             </div>
         </div>
@@ -158,7 +160,6 @@ $login_user = $_SESSION['login_user'];
         <div class="b-example-divider"></div>
         <image src="../image/amu.png" width="1100" height="510"></image> 
     </main>
-    <!-- <image src="../image/amu.png" width="1100" height="510"></image> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>   
 </body>
 </html>
